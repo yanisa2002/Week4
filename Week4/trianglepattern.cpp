@@ -6,7 +6,7 @@ int main()
 {
 	int level;
 	printf("Enter a positive integer : ");
-	scanf("%d", &level);
+	scanf_s("%d", &level);
 	if (level > 0)
 	{
 		triPattern(level);
