@@ -7,18 +7,11 @@ int main()
 	int level;
 	printf("Enter a positive integer : ");
 	scanf_s("%d", &level);
-	if (level > 0)
-	{
-		triPattern(level);
-	}
-	else
-	{
-		printf("ERROR!!");
-	}
+	if (level > 0) triPattern(level);
+	else printf("ERROR!!");
 	return 0;
 }
-void triPattern(int level)
-{
+void triPattern(int level){
 	int row, star;
 	for (row = 0; row < level; row++) {
 		for (star = 0; star < row; star++) {
